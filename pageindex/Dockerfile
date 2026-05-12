@@ -17,7 +17,6 @@ RUN pip install --no-cache-dir \
     qdrant-client==1.11.1 \
     sentence-transformers==3.1.1 \
     torch==2.4.1 \
-    openai==1.47.0 \
     python-dotenv==1.0.1 \
     pydantic==2.8.2
 

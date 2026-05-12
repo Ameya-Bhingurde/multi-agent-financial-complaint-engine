@@ -24,7 +24,7 @@ pinned: false
         ↓
 [PageIndex Service — Hierarchical Segmentation]
         ↓
-[Embedding Service — BGE-small / OpenAI toggle]
+[Embedding Service — BGE-small (Local)]
         ↓
 [Qdrant — Metadata-Tagged Vector Store]
 
@@ -38,7 +38,7 @@ pinned: false
         ↓
 [Context Builder — Token-Limited Structured JSON]
         ↓
-[5 Parallel LLM Agents — Ollama / OpenAI toggle]
+[5 Parallel LLM Agents — Groq Llama 3]
         ↓
 [Debate & Aggregation Engine]
         ↓
@@ -62,7 +62,7 @@ pinned: false
 | FastAPI App | 8000 | Main API layer |
 | Streamlit | 8501 | Consumer Complaint Assistant UI |
 
-> **LLM inference uses external APIs** — no local GPU or Ollama container required.
+> **LLM inference uses external APIs** — no local GPU required.
 
 ---
 
@@ -71,14 +71,14 @@ pinned: false
 ### Prerequisites
 - Docker Desktop
 - Python 3.11+
-- 16 GB RAM (for Ollama + all services)
+- 16 GB RAM (for all services)
 
 ### 1. Clone and configure
 
 ```bash
 cd "Multi-Agent Financial Complaint Governance Engine"
 cp .env.example .env
-# Edit .env — set USE_OPENAI=true and OPENAI_API_KEY if not using Ollama
+# Edit .env — set your GROQ_API_KEY
 ```
 
 ### 2. Start infrastructure
@@ -92,14 +92,11 @@ make up
 
 Get your free API keys:
 - **Groq (Llama 3)**: https://console.groq.com → free, fast, no credit card
-- **OpenAI (GPT-4o)**: https://platform.openai.com → pay-per-use
 
 Set in `.env`:
 ```env
-# Choose one: 'groq' or 'openai'
 LLM_PROVIDER=groq
 GROQ_API_KEY=gsk_your-key-here
-OPENAI_API_KEY=sk-your-key-here  # optional if using groq
 ```
 
 ### 4. Install Python dependencies
@@ -182,15 +179,15 @@ If `std_dev(agent_scores) > DEBATE_THRESHOLD`, a second deliberation round is tr
 │   ├── context_builder.py# Token-limited context JSON
 │   └── Dockerfile
 ├── embeddings/
-│   ├── embedding_service.py  # BGE / OpenAI toggle
+│   ├── embedding_service.py  # Local BGE-small
 │   └── qdrant_store.py       # Qdrant operations
 ├── agents/
 │   ├── base_agent.py
-│   ├── regulatory_compliance_agent.py
+│   ├── compliance_agent.py
 │   ├── fairness_agent.py
-│   ├── financial_impact_agent.py
-│   ├── fraud_pattern_agent.py
-│   ├── reputation_risk_agent.py
+│   ├── financial_agent.py
+│   ├── fraud_agent.py
+│   ├── reputation_agent.py
 │   └── aggregator.py
 ├── api/
 │   ├── main.py
@@ -218,13 +215,17 @@ If `std_dev(agent_scores) > DEBATE_THRESHOLD`, a second deliberation round is tr
 
 ---
 
-## Decision Outputs
+## Decision Outputs & Dynamic Explanations
+
+The system evaluates complaints and recommends one of the following decisions:
 
 | Decision | Meaning |
 |---|---|
 | **Monetary Relief** | System recommends compensation |
 | **Explanation Only** | Company explanation sufficient |
 | **Escalate** | Regulatory or fraud concern, human review required |
+
+Instead of hardcoded responses, the agentic backend generates **dynamic, empathetic, and context-aware explanations** for each decision. Acting as a professional company representative, the chatbot provides a tailored summary of the outcome, addressing the specific nuances of the consumer's complaint while strictly adhering to company policy.
 
 ---
 
@@ -240,17 +241,11 @@ The system compares AI decisions against actual CFPB company responses:
 
 ## LLM Configuration
 
-Set in `.env` — switch providers without any code changes:
+Set in `.env`:
 
 ```env
 # 'groq' → Llama 3 via Groq API (free tier, fast)
-# 'openai' → GPT-4o via OpenAI API
 LLM_PROVIDER=groq
 GROQ_API_KEY=gsk_your-groq-key
 GROQ_MODEL=llama3-70b-8192
-OPENAI_API_KEY=sk-your-openai-key
-OPENAI_MODEL=gpt-4o
-
-# Embeddings (separate from LLM)
-USE_OPENAI_EMBEDDINGS=false   # false = local BGE-small (no cost)
 ```

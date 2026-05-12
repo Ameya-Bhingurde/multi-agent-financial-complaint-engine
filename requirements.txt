@@ -21,9 +21,7 @@ torch==2.4.1
 transformers==4.44.2
 numpy==1.26.4
 
-# ─── LLM APIs (OpenAI + Groq/Llama) ─────────────────────────
-openai==1.47.0
-tiktoken==0.7.0
+# ─── LLM APIs (Groq/Llama) ─────────────────────────
 groq==0.11.0
 
 # ─── NLP / Text Processing ────────────────────────────────────
