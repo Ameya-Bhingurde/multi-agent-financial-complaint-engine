@@ -1,0 +1,130 @@
+version: "3.9"
+
+x-common-env: &common-env
+  POSTGRES_USER: ${POSTGRES_USER:-cfpb}
+  POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-cfpb_secret}
+  POSTGRES_DB: ${POSTGRES_DB:-complaints_db}
+  POSTGRES_HOST: postgres
+  POSTGRES_PORT: "5432"
+
+services:
+  # ─── PostgreSQL ───────────────────────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: cfpb_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-cfpb}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-cfpb_secret}
+      POSTGRES_DB: ${POSTGRES_DB:-complaints_db}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-cfpb} -d ${POSTGRES_DB:-complaints_db}" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ─── Qdrant ───────────────────────────────────────────────────────────────
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: cfpb_qdrant
+    restart: unless-stopped
+    volumes:
+      - qdrant_data:/qdrant/storage
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+
+
+  # NOTE: LLM inference is handled via external APIs (Groq / OpenAI).
+  # No local Ollama container is needed.
+
+  # ─── n8n ──────────────────────────────────────────────────────────────────
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: cfpb_n8n
+    restart: unless-stopped
+    environment:
+      - DB_TYPE=postgresdb
+      - DB_POSTGRESDB_HOST=postgres
+      - DB_POSTGRESDB_PORT=5432
+      - DB_POSTGRESDB_DATABASE=${POSTGRES_DB:-complaints_db}
+      - DB_POSTGRESDB_USER=${POSTGRES_USER:-cfpb}
+      - DB_POSTGRESDB_PASSWORD=${POSTGRES_PASSWORD:-cfpb_secret}
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=${N8N_USER:-admin}
+      - N8N_BASIC_AUTH_PASSWORD=${N8N_PASSWORD:-admin123}
+      - WEBHOOK_URL=http://localhost:5678/
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./n8n:/home/node/.n8n/workflows:ro
+    ports:
+      - "5678:5678"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: [ "CMD-SHELL", "curl -sf http://localhost:5678/healthz || exit 1" ]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+
+  # ─── PageIndex Microservice ───────────────────────────────────────────────
+  pageindex-service:
+    build:
+      context: .
+      dockerfile: pageindex/Dockerfile
+    container_name: cfpb_pageindex
+    restart: unless-stopped
+    environment:
+      <<: *common-env
+    ports:
+      - "8001:8001"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: [ "CMD-SHELL", "curl -sf http://localhost:8001/health || exit 1" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ─── FastAPI App ──────────────────────────────────────────────────────────
+  fastapi-app:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    container_name: cfpb_api
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      <<: *common-env
+      QDRANT_HOST: qdrant
+      QDRANT_PORT: "6333"
+      PAGEINDEX_URL: http://pageindex-service:8001
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+      pageindex-service:
+        condition: service_healthy
+    healthcheck:
+      test: [ "CMD-SHELL", "curl -sf http://localhost:8000/health || exit 1" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
+  qdrant_data:
+  n8n_data:

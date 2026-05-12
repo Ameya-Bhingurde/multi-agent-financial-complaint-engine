@@ -1,0 +1,174 @@
+CREDIT CARD POLICY KNOWLEDGE BASE
+Document: Chase Credit Card Cardholder Agreement — Key Provisions
+Source: JPMorgan Chase Bank, N.A. — Standard Credit Card Agreement (2024)
+Applicable Cards: Chase Sapphire, Chase Freedom, Chase Ink Business, Chase Amazon
+
+========================================================================
+SECTION 1: BILLING DISPUTE RIGHTS (YOUR BILLING RIGHTS NOTICE)
+========================================================================
+
+1.1 WHAT TO DO IF YOU FIND A MISTAKE ON YOUR STATEMENT
+
+If you think there is an error on your statement, write to us at:
+  Chase Card Services, PO Box 15299, Wilmington, DE 19850-5299
+
+In your letter, provide:
+  - Your name and account number
+  - The dollar amount of the suspected error
+  - A description of the suspected error and explanation of why you believe it is an error
+
+You must contact us:
+  - Within 60 DAYS after the error appeared on your statement.
+  - At least 3 business days before an automated payment is scheduled.
+
+1.2 WHAT HAPPENS DURING THE DISPUTE PERIOD
+
+While we investigate:
+  - We cannot try to collect the disputed amount.
+  - We cannot report the disputed amount as delinquent.
+  - We cannot restrict or close your account just because of a dispute.
+  - The disputed amount may remain on your statement. We will not charge late fees on it.
+
+We must resolve the dispute within two billing cycles (not more than 90 days).
+
+If we determine no error:
+  - We will send you a written explanation.
+  - You may request documentation we used to make our decision.
+  - You will owe the disputed amount plus any applicable finance charges accrued.
+
+If we determine an error occurred:
+  - We will correct your account.
+  - We will credit all related finance charges.
+
+1.3 UNAUTHORIZED CHARGES
+
+Your liability for unauthorized use of your credit card:
+  - MAXIMUM LIABILITY: $50 for unauthorized charges made before you notify us.
+  - ZERO LIABILITY for unauthorized charges made after you notify us of loss or theft.
+  - Chase's Zero Liability Policy: Chase extends ZERO liability for unauthorized use in most cases, provided you were not grossly negligent or fraudulent.
+
+How to report: Call the number on the back of your card immediately if your card is lost, stolen, or used without authorization.
+
+========================================================================
+SECTION 2: DEFAULT, PENALTY RATES, AND FEES
+========================================================================
+
+2.1 EVENTS OF DEFAULT
+
+Your account may be considered in default if you:
+  - Fail to make a minimum payment by the due date.
+  - Exceed your credit limit.
+  - Make a payment that is later dishonored (returned/bounced).
+  - Provide false information on your application.
+  - File for bankruptcy protection.
+  - Fail to follow any other terms of this Agreement.
+
+2.2 PENALTY APR (Applicable to new transactions after default)
+
+  - Penalty APR: Up to 29.99% variable
+  - When it applies: If you make a late payment.
+  - How long it applies: Indefinitely, but we will review your account every 6 months. If you made minimum payments on time for 6 consecutive months, we will reinstate your standard APR.
+
+2.3 FEES (Standard Schedule)
+
+  Late Payment Fee:
+    - Up to $40 for accounts where late fee was charged in any of prior 6 billing cycles.
+    - $30 for first occurrence.
+
+  Returned Payment Fee:
+    - Up to $40.
+
+  Cash Advance Fee:
+    - Either $10 or 5% of each cash advance, whichever is greater.
+
+  Balance Transfer Fee:
+    - Either $5 or 5% of each balance transfer, whichever is greater.
+    - Promotional transfer rates may have different fees — see offer details.
+
+  Foreign Transaction Fee:
+    - 3% of each transaction in U.S. dollars (waived on Sapphire and Ink Preferred cards).
+
+  Over-Limit: Chase does NOT permit transactions over your credit limit in most cases (transactions are declined). There is no over-limit fee.
+
+========================================================================
+SECTION 3: INTEREST RATES AND CALCULATIONS
+========================================================================
+
+3.1 ANNUAL PERCENTAGE RATES (Variable Rates — tied to Prime Rate)
+
+  - Purchase APR: Prime Rate + 15.74% to Prime Rate + 24.74% (based on creditworthiness)
+  - Balance Transfer APR: Same as Purchase APR in most cases.
+  - Cash Advance APR: Prime Rate + 21.74% to Prime Rate + 26.74%
+  - Penalty APR: Up to 29.99%
+
+Prime Rate used: Highest U.S. Prime Rate published in The Wall Street Journal on the last business day of each calendar month.
+
+3.2 GRACE PERIOD
+
+  - If you pay your full balance by the due date each month, you will NOT be charged interest on new purchases.
+  - Grace period: At least 21 days from close of billing cycle to due date.
+  - No grace period applies to cash advances or balance transfers (interest accrues from transaction date).
+
+3.3 MINIMUM PAYMENT
+
+  - Greater of: $35 OR 1% of the new balance plus fees, interest, and any past-due amounts.
+  - OR full balance if less than $35.
+  - Paying only the minimum substantially increases total interest paid and time to pay off balance.
+
+========================================================================
+SECTION 4: ACCOUNT MANAGEMENT RIGHTS
+========================================================================
+
+4.1 CHASE'S RIGHT TO CHANGE TERMS
+
+  - Chase may change terms (including rates, fees) with 45 days advance notice.
+  - For rate increases on new transactions: Consumer has 45 days to opt out (close account and pay off at current terms).
+  - For rate increases on existing balances: PROHIBITED under CARD Act, except after 60 days of delinquency.
+
+4.2 ACCOUNT CLOSURE
+
+  Either party may close the account at any time:
+  - Consumer: Call or write to close. Closing does not eliminate existing balance obligations.
+  - Chase: May close account for violation of Agreement terms. Will not close solely because of dispute.
+  - After closure: Existing balance remains subject to Agreement terms.
+
+4.3 CREDIT LIMIT CHANGES
+
+  - Chase may increase or decrease credit limit at any time.
+  - Chase will notify consumer of decreases that affect transactions.
+  - If a transaction causes account to exceed credit limit (in rare cases): Consumer responsible for full amount.
+
+========================================================================
+SECTION 5: REWARDS PROGRAM TERMS
+========================================================================
+
+5.1 POINTS EXPIRATION AND FORFEITURE
+
+  - Points do not expire as long as account is open and in good standing.
+  - If account is CLOSED (by consumer or Chase): Points forfeited within 30 days (Sapphire: may be transferable).
+  - Points may be forfeited if account is delinquent, in default, or involved in fraud.
+
+5.2 REWARDS DISPUTES
+
+  - If points are missing or incorrectly applied: Contact Chase within 6 months of the statement period.
+  - Per CFPB Circular 2024-07: Materially devaluing rewards without adequate notice may be an unfair or deceptive practice.
+
+5.3 ANNUAL FEE REFUND POLICY
+
+  - If you close a Sapphire account within 30 days of the annual fee posting, Chase will refund the annual fee.
+
+========================================================================
+SECTION 6: ARBITRATION AND DISPUTE RESOLUTION
+========================================================================
+
+6.1 ARBITRATION CLAUSE
+
+  - Chase's agreements include an arbitration clause for disputes between consumer and Chase.
+  - Consumer may OPT OUT of arbitration within 60 days of account opening by writing to Chase.
+  - Arbitration prohibits class action lawsuits — each dispute must be resolved individually.
+  - Small claims court option: Either party may bring claims in small claims court.
+
+6.2 APPLICABLE LAW
+
+  - Agreement governed by laws of Delaware and applicable Federal law.
+  - Regulation Z, FCBA, and ECOA apply regardless of arbitration clause.

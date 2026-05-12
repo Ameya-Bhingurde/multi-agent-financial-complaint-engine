@@ -1,0 +1,162 @@
+CREDIT CARD POLICY KNOWLEDGE BASE
+Document: CFPB Credit Card Consumer Rights & Regulatory Framework
+Source: Consumer Financial Protection Bureau (CFPB) — 2024 Guidelines
+Section: Federal Regulations for Credit Card Dispute Resolution
+
+========================================================================
+SECTION 1: REGULATION Z — TRUTH IN LENDING ACT (12 CFR PART 1026)
+========================================================================
+
+1.1 BILLING ERROR RESOLUTION (12 CFR § 1026.13)
+
+A "billing error" includes:
+  (a) A reflection on a periodic statement of an extension of credit that was not made to the consumer or to a person who had actual, implied, or apparent authority to use the consumer's credit card account.
+  (b) A reflection on a periodic statement of an extension of credit that was not accepted by the consumer, or that was not used in conformity with the creditor's procedures.
+  (c) A reflection on a periodic statement of an extension of credit for property or services not delivered to the consumer as agreed.
+  (d) A computation error or similar clerical error.
+  (e) Failure to reflect a payment or other credit to the consumer's account.
+  (f) A reflection on a periodic statement of an extension of credit for which the consumer requests additional clarification.
+
+CONSUMER RIGHTS UPON BILLING ERROR DISPUTE:
+  - Consumer must notify creditor in WRITING within 60 days of the statement date.
+  - Creditor must acknowledge written notice within 30 days.
+  - Creditor must resolve dispute within TWO BILLING CYCLES (not to exceed 90 days).
+  - During investigation, creditor CANNOT: attempt to collect disputed amount; restrict the account solely because of dispute; threaten to report adversely; or report the amount as delinquent.
+  - If error confirmed: Creditor must correct the error and credit all related finance charges.
+  - If no error found: Creditor must provide written explanation and make documents available.
+
+PENALTY FOR NON-COMPLIANCE:
+  - Failure to comply with billing error resolution requirements = creditor forfeits right to collect disputed amount AND related finance charges, up to $50.
+
+1.2 UNAUTHORIZED USE LIABILITY (12 CFR § 1026.12(b))
+
+  - Consumer's maximum liability for unauthorized use of a credit card is $50.
+  - Consumer has ZERO liability if:
+      (i) The card was not received by the consumer.
+      (ii) It can be demonstrated that unauthorized use could not have occurred.
+      (iii) The card issuer did not provide a means to identify the authorized user (e.g., signature, photo, PIN).
+  - "Unauthorized use" means use by a person other than the cardholder who does not have actual, implied, or apparent authority.
+  - Card issuers CANNOT hold consumers liable for unauthorized charges reported promptly.
+
+1.3 REQUIRED DISCLOSURES (12 CFR § 1026.6, § 1026.7)
+
+  - Annual Percentage Rate (APR) for purchases, balance transfers, cash advances.
+  - Method of computing the balance on which finance charges are assessed.
+  - Amount and conditions of any minimum finance charge.
+  - Penalty APR triggers and conditions for rate reduction.
+  - Grace period for paying without finance charge.
+  - Minimum payment obligations and consequences of paying only minimum.
+
+========================================================================
+SECTION 2: FAIR CREDIT BILLING ACT (FCBA) — 15 U.S.C. §§ 1666–1666j
+========================================================================
+
+2.1 CONSUMER RIGHTS UNDER FCBA
+
+  - The right to dispute billing errors within 60 days of statement.
+  - Protection from adverse credit reporting during dispute period.
+  - Right to withhold payment on disputed amounts during investigation.
+  - Right to a written explanation if creditor determines no error.
+
+2.2 MERCHANTS AND CREDITOR OBLIGATIONS
+
+  If consumer is dissatisfied with goods or services purchased on credit card:
+  - Consumer may refuse to pay remaining amount IF:
+      (a) Consumer made good faith effort to resolve problem with merchant.
+      (b) Original sale was for more than $50.
+      (c) Sale occurred in consumer's home state or within 100 miles of billing address (this geographic restriction does NOT apply if merchant is same as card issuer).
+  - Consumer must notify creditor of dispute.
+
+2.3 PROHIBITED ACTS BY CREDITORS
+
+  Creditors may NOT:
+  - Report disputed amounts to credit bureaus as delinquent during investigation.
+  - Accelerate payment on disputed amounts.
+  - Close account solely because consumer disputed a charge.
+  - Threaten or pursue collection activities on disputed amounts during investigation period.
+  - Assess late fees on disputed amount during investigation period.
+
+========================================================================
+SECTION 3: EQUAL CREDIT OPPORTUNITY ACT (ECOA) — 15 U.S.C. § 1691
+========================================================================
+
+3.1 PROHIBITED DISCRIMINATION
+
+  Creditors may NOT discriminate on basis of:
+  - Race, color, religion, national origin
+  - Sex or marital status
+  - Age (if consumer is of legal age to contract)
+  - Because consumer receives public assistance
+  - Consumer's exercise of rights under Consumer Credit Protection Act
+
+3.2 ADVERSE ACTION REQUIREMENTS
+
+  If creditor takes adverse action (denies credit, reduces limit, closes account):
+  - Must provide written notice of adverse action.
+  - Must state specific reasons for adverse action OR inform consumer of right to request reasons.
+  - Must provide reasons within 30 days if consumer requests them.
+  - "Adverse action" includes: denial, termination, unfavorable change in terms (unless applied to all similarly situated consumers).
+
+3.3 DISPARATE IMPACT STANDARD
+
+  Even neutral policies may violate ECOA if they have a disproportionate adverse impact on a protected class AND the creditor cannot justify the policy as necessary for a legitimate business purpose. Lenders must assess whether criteria have disparate impact and whether alternative criteria with less disparate impact exist.
+
+========================================================================
+SECTION 4: CREDIT CARD ACCOUNTABILITY RESPONSIBILITY AND DISCLOSURE ACT (CARD ACT) — 2009
+========================================================================
+
+4.1 RATE INCREASE RESTRICTIONS
+
+  - Creditors CANNOT raise APR on existing balances (retroactive rate increases prohibited).
+  - Exception: After 60 days of delinquency, but rate must be restored if consumer makes 6 consecutive minimum payments on time.
+  - Must give 45 days advance notice before any rate increase on new transactions.
+  - Consumer has right to opt out (close account) when rate is raised; must be allowed to pay off existing balance at old rate.
+
+4.2 FEE RESTRICTIONS
+
+  - Late fees capped at $32 (adjusted for inflation; CFPB proposed $8 in 2024 for large issuers).
+  - Over-limit fees: Consumer must affirmatively opt in to over-limit coverage. Otherwise, transaction over limit must be declined.
+  - No inactivity fees (fees for not using account).
+  - Annual fees and other fees must be reasonable and proportional.
+
+4.3 STATEMENT AND NOTICE REQUIREMENTS
+
+  - Statements must be mailed/delivered at least 21 days before payment due date.
+  - Must show consequences of paying only minimum payment (time to pay off and interest cost).
+  - Must include "minimum payment warning."
+  - Toll-free number for credit counseling agencies required on statements.
+
+4.4 PROTECTIONS FOR YOUNG CONSUMERS
+
+  - Credit cards cannot be issued to applicants under 21 without: (a) independent income to repay, or (b) cosigner who is 21+.
+  - No prescreened solicitations to consumers under 21 unless consumer opts in.
+
+========================================================================
+SECTION 5: CFPB EXAMINATION PRIORITIES — CREDIT CARD ACCOUNTS (2024)
+========================================================================
+
+5.1 UNFAIR, DECEPTIVE, OR ABUSIVE ACTS OR PRACTICES (UDAAP)
+
+  CFPB examiners focus on whether card issuers:
+  - Misrepresent terms, benefits, or limitations of credit card products.
+  - Fail to honor rewards, cashback, or other promotional promises.
+  - Devalue earned rewards without adequate notice.
+  - Use confusing or misleading disclosures in marketing.
+  - Apply fees not disclosed at account opening.
+
+5.2 COMPLAINT RESOLUTION STANDARDS
+
+  CFPB examines whether issuers:
+  - Have adequate complaint intake processes.
+  - Investigate complaints promptly and thoroughly.
+  - Communicate responses clearly and in plain language.
+  - Track complaint patterns to identify systemic issues.
+  - Provide monetary relief when errors are confirmed.
+
+5.3 FAIR LENDING REVIEWS
+
+  Examiners analyze:
+  - Whether underwriting criteria correlates with protected class status.
+  - Whether similarly situated consumers receive inconsistent treatment.
+  - Pricing disparities correlated with protected characteristics.
+  - Whether exceptions disproportionately benefit certain groups.

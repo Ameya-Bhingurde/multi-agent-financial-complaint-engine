@@ -1,0 +1,339 @@
+{
+    "name": "CFPB Complaint Governance — Weekly Pipeline",
+    "nodes": [
+        {
+            "parameters": {
+                "rule": {
+                    "interval": [
+                        {
+                            "field": "weeks",
+                            "weekday": 1,
+                            "hour": 2
+                        }
+                    ]
+                }
+            },
+            "name": "Weekly Trigger",
+            "type": "n8n-nodes-base.scheduleTrigger",
+            "typeVersion": 1,
+            "position": [
+                200,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "url": "http://fastapi-app:8000/health",
+                "options": {
+                    "timeout": 10000
+                }
+            },
+            "name": "Health Check",
+            "type": "n8n-nodes-base.httpRequest",
+            "typeVersion": 4,
+            "position": [
+                450,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "conditions": {
+                    "options": {
+                        "caseSensitive": false
+                    },
+                    "conditions": [
+                        {
+                            "leftValue": "={{$json.status}}",
+                            "rightValue": "ok",
+                            "operator": {
+                                "type": "string",
+                                "operation": "equals"
+                            }
+                        }
+                    ]
+                }
+            },
+            "name": "API Healthy?",
+            "type": "n8n-nodes-base.if",
+            "typeVersion": 2,
+            "position": [
+                700,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "url": "http://fastapi-app:8000/complaints/",
+                "qs": {
+                    "limit": 50,
+                    "filter": "pending"
+                },
+                "options": {}
+            },
+            "name": "Fetch Pending Complaints",
+            "type": "n8n-nodes-base.httpRequest",
+            "typeVersion": 4,
+            "position": [
+                950,
+                200
+            ]
+        },
+        {
+            "parameters": {
+                "fieldToSplitOut": "items",
+                "options": {}
+            },
+            "name": "Split Into Items",
+            "type": "n8n-nodes-base.splitOut",
+            "typeVersion": 1,
+            "position": [
+                1200,
+                200
+            ]
+        },
+        {
+            "parameters": {
+                "url": "=http://fastapi-app:8000/evaluate/{{$json.complaint_id}}",
+                "method": "POST",
+                "options": {
+                    "timeout": 120000
+                }
+            },
+            "name": "Run Governance Panel",
+            "type": "n8n-nodes-base.httpRequest",
+            "typeVersion": 4,
+            "position": [
+                1450,
+                200
+            ]
+        },
+        {
+            "parameters": {
+                "url": "http://fastapi-app:8000/metrics/run-evaluation",
+                "method": "POST",
+                "options": {
+                    "timeout": 60000
+                }
+            },
+            "name": "Run Evaluation",
+            "type": "n8n-nodes-base.httpRequest",
+            "typeVersion": 4,
+            "position": [
+                950,
+                400
+            ]
+        },
+        {
+            "parameters": {
+                "url": "http://fastapi-app:8000/metrics/run-calibration",
+                "method": "POST",
+                "options": {
+                    "timeout": 60000
+                }
+            },
+            "name": "Run Calibration",
+            "type": "n8n-nodes-base.httpRequest",
+            "typeVersion": 4,
+            "position": [
+                1200,
+                400
+            ]
+        },
+        {
+            "parameters": {
+                "url": "http://fastapi-app:8000/metrics/latest",
+                "options": {}
+            },
+            "name": "Fetch Final Metrics",
+            "type": "n8n-nodes-base.httpRequest",
+            "typeVersion": 4,
+            "position": [
+                1450,
+                400
+            ]
+        },
+        {
+            "parameters": {
+                "conditions": {
+                    "conditions": [
+                        {
+                            "leftValue": "={{$json.accuracy}}",
+                            "rightValue": 0.6,
+                            "operator": {
+                                "type": "number",
+                                "operation": "lt"
+                            }
+                        }
+                    ]
+                }
+            },
+            "name": "Accuracy Below 60%?",
+            "type": "n8n-nodes-base.if",
+            "typeVersion": 2,
+            "position": [
+                1700,
+                400
+            ]
+        },
+        {
+            "parameters": {
+                "jsCode": "const m = $input.first().json;\nreturn [{\n  json: {\n    subject: '⚠️ CFPB Engine: Accuracy Alert',\n    body: `Accuracy has dropped to ${(m.accuracy*100).toFixed(1)}%\\nF1: ${(m.f1_score*100).toFixed(1)}%\\nEvaluated: ${m.total_evaluated} decisions\\n\\nRun calibration to update agent weights.`\n  }\n}];"
+            },
+            "name": "Build Alert Message",
+            "type": "n8n-nodes-base.code",
+            "typeVersion": 2,
+            "position": [
+                1950,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "resource": "message",
+                "operation": "send",
+                "subject": "={{$json.subject}}",
+                "message": "={{$json.body}}"
+            },
+            "name": "Send Email Alert",
+            "type": "n8n-nodes-base.emailSend",
+            "typeVersion": 2,
+            "position": [
+                2200,
+                300
+            ],
+            "credentials": {
+                "smtp": {
+                    "id": "1",
+                    "name": "SMTP"
+                }
+            }
+        }
+    ],
+    "connections": {
+        "Weekly Trigger": {
+            "main": [
+                [
+                    {
+                        "node": "Health Check",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Health Check": {
+            "main": [
+                [
+                    {
+                        "node": "API Healthy?",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "API Healthy?": {
+            "main": [
+                [
+                    {
+                        "node": "Fetch Pending Complaints",
+                        "type": "main",
+                        "index": 0
+                    },
+                    {
+                        "node": "Run Evaluation",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Fetch Pending Complaints": {
+            "main": [
+                [
+                    {
+                        "node": "Split Into Items",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Split Into Items": {
+            "main": [
+                [
+                    {
+                        "node": "Run Governance Panel",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Run Evaluation": {
+            "main": [
+                [
+                    {
+                        "node": "Run Calibration",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Run Calibration": {
+            "main": [
+                [
+                    {
+                        "node": "Fetch Final Metrics",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Fetch Final Metrics": {
+            "main": [
+                [
+                    {
+                        "node": "Accuracy Below 60%?",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Accuracy Below 60%?": {
+            "main": [
+                [
+                    {
+                        "node": "Build Alert Message",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Build Alert Message": {
+            "main": [
+                [
+                    {
+                        "node": "Send Email Alert",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        }
+    },
+    "settings": {
+        "executionOrder": "v1"
+    },
+    "staticData": null,
+    "tags": [
+        "cfpb",
+        "governance",
+        "weekly"
+    ]
+}

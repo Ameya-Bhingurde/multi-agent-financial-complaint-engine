@@ -1,0 +1,221 @@
+CREDIT CARD POLICY KNOWLEDGE BASE
+Document: Citibank Credit Card Agreement — Key Provisions
+Source: Citibank, N.A. — Standard Credit Card Agreement (2024)
+Applicable Cards: Citi Double Cash, Citi Custom Cash, Citi Premier, Citi Simplicity, Citi Diamond Preferred
+
+========================================================================
+SECTION 1: BILLING ERROR RIGHTS AND DISPUTE RESOLUTION
+========================================================================
+
+1.1 YOUR BILLING RIGHTS — KEEP THIS NOTICE FOR FUTURE USE
+
+This notice tells you about your rights and our responsibilities under the Fair Credit Billing Act.
+
+WHAT TO DO IF YOU FIND A MISTAKE ON YOUR STATEMENT
+
+If you think there is an error on your statement, write to us at:
+  Citibank — Dispute Inquiries, P.O. Box 6500, Sioux Falls, SD 57117
+  Online: citi.com, choose "Card Management" → "Dispute a Charge"
+  Phone: Number on back of your card (NOT for preserving dispute rights under federal law)
+
+In your letter, give us:
+  - Your name and account number.
+  - The dollar amount of the suspected error.
+  - Describe the error and explain why you believe it is an error.
+
+Timing: You must contact us at least 60 days before any automated payment is scheduled if you want to stop the payment. For other billing errors: within 60 days of the first statement on which the error appeared.
+
+1.2 WHAT HAPPENS WHILE WE INVESTIGATE
+
+  - We cannot try to collect the disputed amount.
+  - We cannot report the disputed amount as delinquent.
+  - We cannot restrict or close your account solely because you disputed a charge.
+
+We will notify you of our decision within 2 billing cycles (not more than 90 days after receiving your letter).
+
+If we determine an error occurred:
+  - We will correct the error promptly.
+  - We will credit your account for the disputed amount and any related interest, fees, or charges.
+
+If we determine no error occurred:
+  - We will send you a written explanation.
+  - We will provide you with the documentation we relied upon.
+  - We may report the disputed amount to credit bureaus as past due if you do not pay.
+
+1.3 YOUR RIGHTS IF DISSATISFIED WITH CREDIT CARD PURCHASES
+
+If you are dissatisfied with the goods or services you have purchased with your Citi credit card, you may have the right not to pay the remaining amount due on the purchase, if the following are true:
+  (a) You made the purchase in your home state or within 100 miles of your current mailing address (NOT applicable if Citi owns the business you purchased from).
+  (b) The purchase was for more than $50.
+  (c) You made a good faith effort to correct the problem with the merchant.
+  (d) You have not yet fully paid for the item.
+
+========================================================================
+SECTION 2: UNAUTHORIZED CHARGES
+========================================================================
+
+2.1 CITI'S ZERO LIABILITY POLICY
+
+Citi provides $0 liability coverage for unauthorized charges that are:
+  - Promptly reported.
+  - Not the result of the cardholder's own fraud or gross negligence.
+  - Verified by Citi as unauthorized.
+
+2.2 FEDERAL LAW LIMITS
+
+Under the Fair Credit Billing Act:
+  - If unauthorized charges are made BEFORE you report loss or theft: Maximum liability = $50.
+  - If unauthorized charges are made AFTER you report loss or theft: $0 liability.
+  - Citi extends $0 liability in most cases, above the federal minimum.
+
+2.3 SPECIAL CASES — AUTHORIZED USERS
+
+  - If YOU gave the card to someone and they made charges you did not specifically authorize, those charges are generally NOT considered "unauthorized" under federal law.
+  - To dispute authorized-user charges: Remove authorized user from account and contact dispute team.
+
+2.4 FRAUD INVESTIGATION TIMELINE
+
+  - Provisional credit may be issued during investigation.
+  - Citi will investigate and determine within 10 business days (standard) or 5 business days (for PIN transactions at merchants).
+  - For complex cases (identity theft, account takeover): May take up to 45 days.
+  - Consumer receives written outcome.
+
+========================================================================
+SECTION 3: INTEREST RATES AND FEES
+========================================================================
+
+3.1 ANNUAL PERCENTAGE RATES
+
+  Purchase APR:
+    - Citi Simplicity: Prime Rate + 16.49% to Prime Rate + 27.49%
+    - Citi Double Cash: Prime Rate + 16.49% to Prime Rate + 26.49%
+    - Citi Custom Cash: Prime Rate + 16.49% to Prime Rate + 26.49%
+    - Citi Premier: Prime Rate + 19.49% to Prime Rate + 27.49%
+
+  Balance Transfer APR: Same as Purchase APR (unless promotional rate applies).
+  Cash Advance APR: Prime Rate + 22.49% to Prime Rate + 27.49%
+  Penalty APR: Up to 29.99%
+
+  Prime Rate: Highest rate published in The Wall Street Journal on the last business day of each calendar month.
+
+3.2 FEES
+
+  Annual Fee:
+    - Citi Simplicity: $0
+    - Citi Double Cash: $0
+    - Citi Custom Cash: $0
+    - Citi Premier: $95
+
+  Late Payment Fee:
+    - Up to $41. Citi Simplicity: $0 late fees (a key product feature).
+
+  Cash Advance Fee:
+    - $10 or 5% of each cash advance, whichever is greater.
+
+  Balance Transfer Fee:
+    - $5 or 5% of each transfer, whichever is greater.
+    - Promotional balance transfer offers may have different fees — review offer terms.
+
+  Foreign Transaction Fee:
+    - 3% of U.S. dollar amount (Citi Premier: $0).
+
+  Returned Payment Fee: Up to $41.
+  Over-Limit Fee: $0 — Citi does not charge over-limit fees; over-limit transactions declined.
+
+3.3 GRACE PERIOD
+
+  - At least 23 days from billing cycle close to payment due date.
+  - No interest charged on purchases if full balance paid by due date.
+  - No grace period on cash advances or balance transfers — interest accrues from transaction date.
+
+3.4 MINIMUM PAYMENT CALCULATION
+
+  - Equal to: interest charges + fees + 1% of principal balance, OR $25, whichever is greater.
+  - If full balance ≤ $25: pay full balance.
+  - Paying only minimum extends payoff time dramatically.
+
+========================================================================
+SECTION 4: ACCOUNT TERMS AND RIGHTS
+========================================================================
+
+4.1 CHANGES TO AGREEMENT
+
+  Citi may change rates, fees, and terms:
+  - Adverse changes: 45 days advance notice required.
+  - Rate increases on existing balances: PROHIBITED (CARD Act) except after 60 days delinquency.
+  - Consumer opt-out: Must be provided for most adverse changes. Closing account preserves old terms for existing balance payoff.
+
+4.2 ACCOUNT CLOSURE
+
+  Citi may close the account if you:
+  - Default (miss minimum payment).
+  - Exceed credit limit repeatedly.
+  - Provide false information.
+  - Engage in fraudulent activity.
+  - File for bankruptcy.
+  - Fail to comply with Agreement.
+
+  Citi CANNOT close or restrict account solely because you exercised your dispute rights.
+
+4.3 CREDIT LIMIT MANAGEMENT
+
+  - Citi sets credit limit at account opening and may adjust anytime.
+  - Citi may decrease limit with notice.
+  - Automatic increases may be offered based on account history — consumer may opt out.
+
+========================================================================
+SECTION 5: CITI FLEX PLAN AND FLEXIBLE PAYMENT OPTIONS
+========================================================================
+
+5.1 CITI FLEX PAY
+
+  - Allows consumers to pay for eligible purchases in fixed monthly installments at lower interest rate.
+  - Available for purchases $100 or more on select cards.
+  - Participating retailers: Amazon, Walmart, and others.
+  - Terms: Fixed APR (typically lower than purchase APR), fixed monthly payment, no fees to enroll.
+
+5.2 BALANCE TRANSFER OFFERS
+
+  - Promotional APR: Often 0% for 15 to 21 months.
+  - Balance transfer fee applies even during promotional period.
+  - Transfers from other Citi accounts not eligible.
+  - Promotional APR ends if payment is more than 60 days late.
+
+========================================================================
+SECTION 6: REWARDS (THANKYOU POINTS / CASH BACK)
+========================================================================
+
+6.1 EARNING REWARDS
+
+  - Citi Double Cash: 1% cash back when you buy, 1% when you pay.
+  - Citi Custom Cash: 5% (up to $500/mo) on top category each billing cycle, 1% on all else.
+  - Citi Premier: 3X points on hotel, air, supermarkets, restaurants, gas; 1X on all else.
+  - Rewards earned on net purchases only (returns and credits deducted).
+
+6.2 THANK YOU POINTS — EXPIRATION
+
+  - ThankYou Points earned on Citi Premier: DO NOT expire while account is open.
+  - Points forfeited for: account closure by Citi due to fraud; account delinquency exceeding 60 days.
+  - Points NOT forfeited for: voluntary account closure in good standing (transferred to another eligible account if consumer acts within 30 days).
+
+6.3 CFPB REWARDS DEVALUATION RULE (2024)
+
+  Per CFPB Circular 2024-07: Any material devaluation of earned ThankYou Points without adequate advance notice and opt-out opportunity may constitute an unfair or deceptive act or practice under the Consumer Financial Protection Act (CFPA). Citi must provide clear notice of any changes to point values or redemption rates.
+
+========================================================================
+SECTION 7: BANKRUPTCY AND HARDSHIP
+========================================================================
+
+7.1 BANKRUPTCY FILING
+
+  If consumer files for bankruptcy:
+  - Account will be closed.
+  - Citi will cease collection activity per automatic stay provisions.
+  - Remaining balance subject to bankruptcy proceedings.
+
+7.2 HARDSHIP PROGRAMS
+
+  - Citi offers temporary hardship programs for consumers facing financial difficulty.
+  - May include: Reduced minimum payment, temporarily waived fees, reduced interest rate.
+  - Must contact Citi proactively; not automatic.
+  - Temporary program does not waive permanent terms of Agreement.
