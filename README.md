@@ -1,11 +1,3 @@
----
-title: Multi-Agent Financial Complaint Governance Engine
-emoji: ⚖️
-colorFrom: blue
-colorTo: indigo
-sdk: docker
-pinned: false
----
 
 # Multi-Agent Financial Complaint Governance Engine
 
